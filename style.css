@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/******Global Style******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    color: #fff;
+}
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+p {
+    font-weight: 500;
+}
+img {
+    width: 100%;
+}
+.header {
+    background-image: url(./Images/header.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.header .headerTitle {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.header .headerTitle br {
+    display: none;
+}
+.headerP1 h3, .headerP2 h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.headerP1 p, .headerP2 p {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.header i {
+    font-size: 70px;
+    color: yellow;
+    font-weight: 500;
+}
+.headerP2 {
+    margin-top: 30px;
+}
+.testimonials,
+.earnSection {
+    background-color: #07061a;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.textCenter {
+    text-align: center;
+}
+.icon {
+    padding-top: 50px;
+}
+.userIcon {
+    font-size: 30px;
+    color: yellow;
+
+}
+.starIcon {
+    color: yellow;
+}
+.testimonials h3,
+.earnSection h3 {
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 10;
+}
+.earnSection .tr h3::after,
+.earnSection .tg h3::after,
+.earnSection .pi h3::after {
+    position: absolute;
+    content: '';
+    width: 85%;
+    height: 35px;
+    background: #f1c50e;
+    top: 30px;
+    right: 0;
+    z-index: -1;
+}
+.testimonials p,
+.earnSection p {
+    padding-bottom: 50px;
+}
+.access {
+    color: #000;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.access i {
+    font-size: 60px;
+    color: yellow;
+    font-weight: 500;
+}
+.access h1 {
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+.access h1::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 35px;
+    background: #f1c50e;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+}
+.access p {
+    color: gray;
+    padding-bottom: 30px;
+}
+.contact .btn,
+.access .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
+    border: none;
+
+}
+.access .right {
+    margin-top: 70px;
+}
+.newSection {
+    color: #000;
+}
+.newSection .content {
+    padding-top: 20px;
+}
+.newSection h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.newSection .content {
+    padding-bottom: 50px;
+}
+.newSection .content h1 {
+    position: relative;
+    z-index: 10;
+}
+.newSection .content h1::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 35px;
+    background: #f1c50e;
+    top: 23px;
+    right: 0;
+    z-index: -1;
+}
+.newSection p {
+    color: gray;
+}
+.newSection i {
+    font-size: 100px;
+    color: yellow;
+}
+.newSection .p2 {
+    padding-top: 50px;
+}
+.contact {
+    background-color: #07061a;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.contact i {
+    color: yellow;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.contact .icofont-phone {
+    font-size: 50px;
+}
+.contact h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+.contact h1::after {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 50px;
+    background: #f1c50e;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+}
+.contact .x {
+    padding-bottom: 20px;
+}
+.contact .y {
+    padding-bottom: 40px;
+}
+.contact .form {
+    padding-top: 50px;
+}
+.contact textarea,
+.contact input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+.contact input {
+    height: 50px;
+}
+.contact .btn {
+    background-color: #fff;
+    color: gray;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .header .headerTitle br {
+        display: block;
+    }
+    .header .headerTitle {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .headerInner .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 550px;
+        gap: 20px;
+    }
+    .headerP2 {
+        margin-top: 0;
+    }
+    .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 50px;
+    }
+    .d-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+    .access .right {
+        margin-top: 0px;
+    }
+    .access h1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .access h1::after {
+        position: absolute;
+        content: '';
+        width: 70%;
+        height: 60px;
+        background: #f1c50e;
+        top: 20px;
+        right: 0;
+        z-index: -1;
+    }
+    .images .allImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .images img {
+        height: 500px;
+    }
+    .newSection {
+        padding: 70px 0;
+    }
+    .newSection .d-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .newSection .iconOthers {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .newSection .p2 {
+        padding-top: 0px;
+    }
+    .access .right img,
+    .newSection img {
+        height: 600px;
+    }
+    .contact .d-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .contact .form {
+        padding-top: 0px;
+    }
+    .contact .btn {
+        margin-left: 43%;
+    }
+    .contact h1 {
+        position: relative;
+        z-index: 10;
+    }
+    .contact h1::after {
+        position: absolute;
+        content: '';
+        width: 85%;
+        height: 50px;
+        background: #f1c50e;
+        top: 20px;
+        right: 0;
+        z-index: -1;
+    }
+}
